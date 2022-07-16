@@ -186,7 +186,8 @@ body {
 }
 
 .sidebar-list-item-data {
-    max-width: calc(100% - 50px);
+	width: calc(100% - 20px - 13px);
+#    max-width: calc(100% - 50px);
 }
 
 .sidebar-list-item-title {
@@ -214,6 +215,8 @@ body {
     background-position: -143px -96px;
     margin-top: 7px;
     cursor: pointer;
+	position:absolute;
+	right:7px;
 }
 
 .sidebar-list-item-delete:hover {
@@ -221,12 +224,16 @@ body {
 
 .sidebar-list-item-checkbox {
     flex: none;
+    width: 20px;
 }
 
 .sidebar-list-item-checkbox input {
     float: left;
-    margin: 7px 8px 7px 0px;
-}
+    margin: 0;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}}
 
 .sidebar-list-item.selected .sidebar-list-item-subtitle {
     color: white;
